@@ -1,9 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,700;0,800;1,700;1,800&display=swap');
 
 /* font-family: 'Mulish', sans-serif; */
 /* .box {
     border-color: #f44336 #2196f3 #4caf50 #ff9800;
   } */
+input{
+    text-decoration:none;
+}
 p{
     text-decoration:none;
 }
@@ -57,7 +60,7 @@ body{
     border-radius: 10px 10px 5px 5px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
     background-color: #FFF;
-
+    text-align: center;
 }
 
 header{
@@ -68,6 +71,9 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.header_sign_in{
+    border-bottom: none;
 }
 
 .back_menu{
@@ -108,7 +114,21 @@ main{
     display: flex;
     flex-direction: column;
 }
+.profile1{
+    margin: 20px;
+    /* height: 100%; */
+    width: calc(100vw - 40px);
+    max-width: 380px;
+    /* border: 1px solid; */
 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-height: 800px;
+    min-height: 400px;
+    height: calc(100vh - 50vh);
+}
 
 @media all and (max-width: 300px){
     .profile{
@@ -146,6 +166,21 @@ main{
     border-radius: 100%;
     background-image: url(img/infophoto.png);
     background-position: -56px -19px;
+    
+}
+.logo_container{
+    display: flex;
+    justify-content: center;
+
+}
+.logo{
+
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    background-image: url(img/logo.jpg);
+    background-position: 0px 0px;
+    background-size: 200px;
     
 }
 .rectangle1{
@@ -277,6 +312,49 @@ html body .message-form {
     text-align: left;
 }
 
+.sign_in_block{
+    display: flex;
+    flex-direction: column;
+}
+.email, .password{
+    padding-left: 10px;
+    background: #FFFFFF;
+    border: 0.5px solid #7B8794;
+    border-radius: 8px;
+    height: 48px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+
+/* Neutral / Grey 400 */
+
+color: #7B8794;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+.text_sign_in{
+    margin-bottom: 6px;
+    margin-right: auto;
+    margin-left: 10px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #323F4B;
+    
+}
+
+
 #highload1, #highload2, #highload3, #highload4, #highload5 {
     width: 27px;
     height: 27px;
@@ -294,26 +372,48 @@ html body .message-form {
 /* #highload1:hover, #highload2:hover, #highload3:hover, #highload4:hover, #highload5:hover {
     background-color: #93a08a;
 } */
-.button_complex{
-    margin: 20px;
-    /* height: 380px; */
+.button{
+    /* margin: 20px;
+    height: 380px;
     width: calc(100vw - 40px);
     max-width: 380px;
     height: 40px;
-    /* border: 1px solid; */
+    border: 1px solid;
     background: rgba(239, 228, 218, 0.11);
     border-radius: 5px 5px 5px 5px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
     display: flex;
     justify-content: center;
     align-items: center;
-    transition-duration: 0.3s;
+    transition-duration: 0.3s; */
+    margin: 0 40px;
+    background: #77AE50;
+    border: 0.5px solid #77AE50;
+    border-radius: 8px;
+    width: calc(100vw - 80px);
+    max-width: 340px;
+    height: 59px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 1.25px;
+    color: #F2F2F2;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.2s;
+
+
 }
 /* .button:hover{
     background: rgba(173, 113, 56, 0.11);
     box-shadow: 0 3px 4px 0 rgba(0,0,0,0.24);
 } */
-.button_complex:active{
-    background-color: #77AE50;
+.button:active{
+    background-color: rgba(255, 108, 74, 0.64);
+    border: 0.5px solid rgba(255, 108, 74, 0.64);
     box-shadow: 0 3px 4px 0 rgba(0,0,0,0.24);
 }
