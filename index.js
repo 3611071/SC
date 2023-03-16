@@ -1,6 +1,6 @@
 function quit() {
   setCookie('userKey', '-1');
-  window.location.replace('./sign_in.html');
+  window.location.replace('./clearc');
 }
 
 makeRequest(JSON.stringify({
