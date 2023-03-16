@@ -1,12 +1,14 @@
-const url = 'http://app:3000/graphql';
+const url = 'http://localhost/graphql/';
 
 const makeRequest = (query, key) => {
   return fetch(url, {
     method: 'POST',
     headers: {
-      'Content-type': 'application/json',
+      'Content-Type': 'application/json',
+      'Accept': 'application/json',
+
       'authorization': 'Bearer ' + key,
     },
-    body: JSON.stringify({ query: query }),
+    body: query,
   }).then(res => res.json());
 };

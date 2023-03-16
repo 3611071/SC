@@ -13,23 +13,24 @@ function sendResult() {
         }
     }
 
-    const query = `
-                mutation test {
-                    createComplex(input: {
-                      mo: ${myComplex[0]}
-                      tu: ${myComplex[1]}
-                      we: ${myComplex[2]}
-                      th: ${myComplex[3]}
-                      fr: ${myComplex[4]}
-                    }){
-                      id
-                    }
-                  }
-                `;
+    const query = JSON.stringify({
+        query: `
+            mutation test {
+                createComplex(input: {
+                  mo: ${myComplex[0]}
+                  tu: ${myComplex[1]}
+                  we: ${myComplex[2]}
+                  th: ${myComplex[3]}
+                  fr: ${myComplex[4]}
+                }){
+                  id
+                }
+              }
+            `});
     makeRequest(query, getCookie('userKey')).then(res => {
         try {
             if (res.data.createComplex.id) {
-                window.location.replace('./index.html');
+                window.location.replace('./complex.html');
             }
         }
         catch (e) {

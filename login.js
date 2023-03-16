@@ -2,7 +2,8 @@ function login() {
   const email = document.getElementById('login');
   const pass = document.getElementById('password');
 
-  const query = `mutation Login{ 
+  const query = JSON.stringify({
+    query: `mutation Login{ 
     loginUser(input: { 
       login: \"${email.value}\" 
       password: \"${pass.value}\" 
@@ -10,7 +11,7 @@ function login() {
     { 
       token 
     } 
-  }`;
+  }`});
 
   console.log(query)
 
@@ -31,9 +32,10 @@ function login() {
 const myKey = getCookie('userKey');
 
 if (myKey != undefined) {
-  const query = `query myQuery{
+  const query = JSON.stringify({
+    query: `query myQuery{
     validUser
-  }`
+  }`})
 
   makeRequest(query, getCookie('userKey')).then(res => {
     if (res.data.validUser) window.location.replace('./index.html');
