@@ -10,6 +10,7 @@ input {
 p {
   text-decoration: none;
 }
+
 a,
 a:link,
 a:visited,
@@ -299,14 +300,17 @@ nav {
   align-items: center;
   filter: none;
 }
+
 .munu_b_lk {
   fill: #77ae50;
   stroke: #77ae50;
 }
+
 .munu_b_lk:hover {
   fill: #9a9a9a;
   stroke: #9a9a9a;
 }
+
 @media screen and (max-device-width: 700px) {
   html body .message-form {
     padding: 10px 53px 30px;
@@ -369,7 +373,6 @@ nav {
   text-transform: uppercase;
   color: #323f4b;
 }
-
 #highload1,
 #highload2,
 #highload3,
@@ -383,6 +386,7 @@ nav {
   transition-duration: 0.3s;
   box-shadow: 3px 3px 3px 0px #d1d9e6 inset, -3px -3px 3px 0px #ffffff inset;
 }
+
 #highload1:checked,
 #highload2:checked,
 #highload3:checked,
@@ -390,6 +394,7 @@ nav {
 #highload5:checked {
   background-color: #77ae50;
 }
+
 /* #highload1:hover, #highload2:hover, #highload3:hover, #highload4:hover, #highload5:hover {
     background-color: #93a08a;
 } */
@@ -427,6 +432,7 @@ nav {
   align-items: center;
   transition-duration: 0.1s;
 }
+
 /* .button:hover{
     background: rgba(173, 113, 56, 0.11);
     box-shadow: 0 3px 4px 0 rgba(0,0,0,0.24);
