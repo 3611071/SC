@@ -31,5 +31,4 @@ function setCookie(name, value, options = {}) {
 }
 
 function clearCookies() {
-  document.cookie = ""
 }
