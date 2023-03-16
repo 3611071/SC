@@ -1,5 +1,5 @@
 function quit() {
-  setCookie('userKey', -1);
+  clearCookies()
   window.location.replace('./sign_in.html');
 }
 
