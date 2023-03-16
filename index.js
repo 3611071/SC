@@ -1,5 +1,5 @@
 function quit() {
-  setCookie('userKey', '');
+  setCookie('userKey', -1);
   window.location.replace('./sign_in.html');
 }
 
@@ -27,7 +27,7 @@ query myQuery{
 
 const myKey = getCookie('userKey');
 
-if (myKey != undefined) {
+if (myKey != -1) {
   const query = JSON.stringify({
     query: `query myQuery{
     validUser

@@ -31,7 +31,7 @@ function login() {
 
 const myKey = getCookie('userKey');
 
-if (myKey != undefined) {
+if (myKey != -1) {
   const query = JSON.stringify({
     query: `query myQuery{
     validUser
