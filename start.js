@@ -14,5 +14,5 @@ app.get("/", (req, res) => {
 
 app.get("/clearc", (req, res) => {
   res.clearCookie();
-  res.location("/");
+  res.redirect('/')
 })
