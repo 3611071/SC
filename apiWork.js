@@ -7,7 +7,7 @@ const makeRequest = (query, key) => {
       'Content-Type': 'application/json',
       'Accept': 'application/json',
 
-      'authorization': 'Bearer ' + key,
+      'auth': 'Bearer ' + key,
     },
     body: query,
   }).then(res => res.json());
