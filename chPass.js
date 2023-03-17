@@ -18,7 +18,6 @@ function chPass() {
       }`});
 
     makeRequest(query, getCookie('userKey')).then(res => {
-        console.log(res)
         if (res.errors && res.errors.message === 'Wrong Password') {
             const errorM = document.getElementById('errorM');
             errorM.style.display = 'block';

@@ -13,6 +13,9 @@ function login() {
     } 
   }`});
 
+  email.value = '';
+  pass.value = '';
+
   makeRequest(query, '').then(res => {
     try {
       if (res.errors[0].message == 'Wrong data') {
