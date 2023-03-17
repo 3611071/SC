@@ -10,11 +10,10 @@ function chPass() {
     }
 
     const query = {
-        query: `
-    mutation changePass {
+        query: 
+        `mutation changePass {
         changePassword(lastPass: \"${i1.value}\", newPass: \"${i2.value}\")
-      }
-    `}
+      }`}
 
     makeRequest(query, getCookie('userKey')).then(res => {
         console.log(res)
