@@ -12,7 +12,7 @@ function chPass() {
     const query = {
         query: `
     mutation changePass {
-        changePassword(lastPass: "\"" + ${i1.value} + "\"", newPass: "\"" + ${i2.value} + "\"")
+        changePassword(lastPass: \"${i1.value}\", newPass: \"${i2.value}\")
       }
     `}
 
