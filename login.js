@@ -13,8 +13,6 @@ function login() {
     } 
   }`});
 
-  console.log(query)
-
   makeRequest(query, '').then(res => {
     try {
       if (res.errors[0].message == 'Wrong data') {
@@ -31,7 +29,7 @@ function login() {
 
 const myKey = getCookie('userKey');
 
-if (myKey != "-1") {
+if (myKey != undefined) {
   const query = JSON.stringify({
     query: `query myQuery{
     validUser

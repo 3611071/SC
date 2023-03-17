@@ -1,5 +1,5 @@
 function quit() {
-  setCookie('userKey', '-1');
+  setCookie('userKey', undefined);
   window.location.replace('./clearc');
 }
 
@@ -27,7 +27,7 @@ query myQuery{
 
 const myKey = getCookie('userKey');
 
-if (myKey != "-1") {
+if (myKey != undefined) {
   const query = JSON.stringify({
     query: `query myQuery{
     validUser
