@@ -12,17 +12,18 @@ function chPass() {
     const query = {
         query: `
     mutation changePass {
-        changePassword(lastPass: ${i1.value}, newPass: ${i2.value})
+        changePassword(lastPass: "\"" + ${i1.value} + "\"", newPass: "\"" + ${i2.value} + "\"")
       }
     `}
 
     makeRequest(query, getCookie('userKey')).then(res => {
+        console.log(res)
         if(res.errors && res.errors.message === 'Wrong Password'){
             const errorM = document.getElementById('errorM');
             errorM.style.display = 'block';
             return
         }
 
-        document.location.replace('./index.html')
+        //document.location.replace('./index.html')
     })
 }
