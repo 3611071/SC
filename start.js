@@ -1,8 +1,8 @@
 const express = require("express");
 const app = express();
 
-app.listen(80, () => {
-  console.log("Application started and Listening on port 80");
+app.listen(3001, () => {
+  console.log("Application started and Listening on port 3001");
 });
 
 // serve your css as static
