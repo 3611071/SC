@@ -8,6 +8,6 @@ makeRequest(
   }),
   ""
 ).then((res) => {
-  fetch("http://app:3000/download-table1", {
+  fetch("http://178.47.46.58/download-table1", {
   }).then((res) => {});
 });

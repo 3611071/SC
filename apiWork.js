@@ -1,4 +1,4 @@
-const url = 'http://app:3000/graphql';
+const url = 'http://178.47.46.58/graphql';
 
 const makeRequest = (query, key) => {
   return fetch(url, {
