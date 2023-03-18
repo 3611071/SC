@@ -6,7 +6,6 @@ const makeRequest = (query, key) => {
     headers: {
       'Content-Type': 'application/json',
       'Accept': 'application/json',
-      'Access-Control-Allow-Origin': 'http://app:3000/',
 
       'auth': 'Bearer ' + key,
     },
