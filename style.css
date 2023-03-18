@@ -450,3 +450,13 @@ nav {
 .error h3 {
   color: red;
 }
+
+.download {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+}

@@ -1,4 +1,4 @@
-const url = 'http://178.47.46.58/graphql';
+const url = 'http://app:3000/graphql';
 
 const makeRequest = (query, key) => {
   return fetch(url, {
@@ -6,6 +6,7 @@ const makeRequest = (query, key) => {
     headers: {
       'Content-Type': 'application/json',
       'Accept': 'application/json',
+      'Access-Control-Allow-Origin': 'http://app:3000/',
 
       'auth': 'Bearer ' + key,
     },
