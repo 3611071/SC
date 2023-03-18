@@ -16,3 +16,7 @@ app.get("/clearc", (req, res) => {
   res.clearCookie();
   res.redirect("/");
 });
+
+app.get("/download-table1", (req, res) => [
+  res.redirect('./download.html')
+])
