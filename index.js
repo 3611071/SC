@@ -24,7 +24,7 @@ makeRequest(JSON.stringify({
 query myQuery{
     me{
       name
-      lastNamewindow.location.replace('./sign_in.html');
+      lastName
       avatarUrl
       class {
         number
@@ -36,6 +36,7 @@ query myQuery{
     const nameP = document.getElementById('nameP');
     const className = document.getElementById('className');
     const photo = document.getElementById('profile_photo');
+    console.log(res)
     nameP.innerHTML = res.data.me.lastName + ' ' + res.data.me.name;
     className.innerHTML = 'Ученик, класс ' + res.data.me.class.number + res.data.me.class.letter;
     photo.style.backgroundImage = `url(${res.data.me.avatarUrl})`;
