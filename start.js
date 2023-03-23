@@ -1,12 +1,13 @@
 const express = require("express");
 const app = express();
 
-app.listen(3001, () => {
+app.listen(80, () => {
   console.log("Application started and Listening on port 3001");
 });
 
 // serve your css as static
 app.use(express.static(__dirname));
+console.log(__dirname)
 
 app.get("/", (req, res) => {
   res.sendFile(__dirname + "/sign_in.html");
@@ -18,5 +19,5 @@ app.get("/clearc", (req, res) => {
 });
 
 app.get("/download-table1", (req, res) => [
-  res.redirect('./download.html')
+  res.redirect('./downloadPage.html')
 ])

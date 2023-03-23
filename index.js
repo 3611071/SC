@@ -3,12 +3,28 @@ function quit() {
   window.location.replace('./clearc');
 }
 
+const myKey = getCookie('userKey');
+
+if (myKey != undefined) {
+  const query = JSON.stringify({
+    query: `query myQuery{
+    validUser
+  }`})
+
+  makeRequest(query, getCookie('userKey')).then(res => {
+    if (!res.data.validUser) window.location.replace('./sign_in.html');
+  })
+}
+else {
+  window.location.replace('./sign_in.html');
+}
+
 makeRequest(JSON.stringify({
   query: `
 query myQuery{
     me{
       name
-      lastName
+      lastNamewindow.location.replace('./sign_in.html');
       avatarUrl
       class {
         number
@@ -24,16 +40,3 @@ query myQuery{
     className.innerHTML = 'Ученик, класс ' + res.data.me.class.number + res.data.me.class.letter;
     photo.style.backgroundImage = `url(${res.data.me.avatarUrl})`;
   })
-
-const myKey = getCookie('userKey');
-
-if (myKey != undefined) {
-  const query = JSON.stringify({
-    query: `query myQuery{
-    validUser
-  }`})
-
-  makeRequest(query, getCookie('userKey')).then(res => {
-    if (!res.data.validUser) window.location.replace('./sign_in.html');
-  })
-}
