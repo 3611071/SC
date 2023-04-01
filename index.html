@@ -5,18 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link type="text/css" rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 
 <body>
-    <script src="cookies.js"></script>
-    <script src="apiWork.js"></script>
-    <script src="./index.js"></script>
 
     <div class="main_container">
 
         <header>
+            <div class="head_right_sapce"></div>
             <p class="head">Личный кабинет</p>
             <div class="head_right_sapce"></div>
         </header>
@@ -37,12 +35,12 @@
                     </svg>
                     <div class="profile_photo" id="profile_photo"></div>
                     <div class="profile_name">
-                        <h4 id="nameP" name="nameP">Данилов Игнат</h4>
-                        <h5 id="className" name="className">Ученик, класс 3В</h5>
+                        <h4 id="nameP" name="nameP">Школа 215 "Созвездие"</h4>
+                        <h5 id="className" name="className"></h5>
                     </div>
                 </div>
                 <div class="profile_menu">
-                    <a href="./orders.html">
+                    <!-- <a href="./orders.html">
                         <div class="menu_buttons">
                             <p>Мои заказы</p>
                             <svg class="list" width="9" height="14" viewBox="0 0 9 14" fill="none"
@@ -51,8 +49,8 @@
                                     stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                         </div>
-                    </a>
-                    <a href="./questions.html">
+                    </a> -->
+                    <!-- <a href="./questions.html">
                         <div class="menu_buttons">
                             <p>Мои ответы</p>
                             <svg class="list" width="9" height="14" viewBox="0 0 9 14" fill="none"
@@ -61,7 +59,7 @@
                                     stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                         </div>
-                    </a>
+                    </a> -->
                     <a href="./complex.html">
                         <div class="menu_buttons">
                             <p>Комплекс на выбор</p>
@@ -92,7 +90,7 @@
                             </svg>
                         </div>
                     </a>
-                    <a href="./sign_in.html">
+                    <a href="#" onclick="quit()">
                         <div class="menu_buttons menu_buttons_exit">
                             <p>Выйти</p>
                             <svg class="list" width="9" height="14" viewBox="0 0 9 14" fill="none"
@@ -152,6 +150,10 @@
             </nav>
         </footer>
     </div>
+
+    <script type="application/javascript" src="cookies.js"></script>
+    <script type="application/javascript" src="apiWork.js"></script>
+    <script type="application/javascript" src="./index.js"></script>
 </body>
 
 </html>

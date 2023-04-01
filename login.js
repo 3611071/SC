@@ -13,7 +13,8 @@ function login() {
     } 
   }`});
 
-  console.log(query)
+  email.value = '';
+  pass.value = '';
 
   makeRequest(query, '').then(res => {
     try {

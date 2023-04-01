@@ -20,7 +20,7 @@ a:active {
   text-decoration: none;
   color: #323f4b;
 }
-h4 {
+h4, h3 {
   font-family: "Mulish";
   font-style: normal;
   font-weight: 600;
@@ -36,6 +36,19 @@ button {
 .profile h4 {
   margin-left: 20px;
 }
+.h3_center{
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+.h3_justify {
+  text-indent: 15px;
+  font-size: 18px;
+  text-align: justify;
+  margin: 0px;
+  padding: 10px;
+  }
+
 body {
   background-color: #f4f3f3;
   display: flex;
@@ -61,7 +74,7 @@ body {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
   background-color: #fff;
   text-align: center;
-  background-image: url(img/robot.png);
+  background-image: url(img/500_92.png);
   background-size: 210px;
   background-repeat: no-repeat;
   background-position: 90% 337px;
@@ -85,6 +98,10 @@ body {
   background-color: #fff;
   text-align: center;
   height: 2600px;
+  background-image: url(img/cute-astronaut.png);
+  background-size: 210px;
+  background-repeat: no-repeat;
+  background-position: 7% 457px;
 }
 
 header {
@@ -187,7 +204,7 @@ main {
   height: 96px;
   width: 96px;
   border-radius: 100%;
-  background-image: url(img/infophoto.png);
+  /* background-image: url(img/infophoto.png); */
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -449,4 +466,14 @@ nav {
 
 .error h3 {
   color: red;
+}
+
+.download {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
 }
