@@ -89,7 +89,6 @@ body {
   padding: none;
   /* background-color: #999999; */
   max-width: 420px;
-  max-height: 1000px;
   min-height: 650px;
   width: 100vw;
   height: calc(100vh - 8vh);
@@ -97,7 +96,11 @@ body {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
   background-color: #fff;
   text-align: center;
-  height: 2600px;
+  height: 1700px;
+ 
+}
+
+.main_container2_help{
   background-image: url(img/cute-astronaut.png);
   background-size: 210px;
   background-repeat: no-repeat;
@@ -154,6 +157,62 @@ main {
   flex-direction: column;
   /* align-items: center; */
 }
+
+.profile_complex{
+flex-wrap: wrap ;
+flex-direction: row;
+font-family: "Mulish";
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 150%;
+color: #323f4b;
+}
+
+.profile_complex_day{
+    width: calc(100vw - 40px);
+    max-width: 380px;
+    font-size: 20px;
+    padding: 10px 0px;
+}
+
+
+.complex_variants_1{
+display: flex;
+justify-content: center;
+width: 47%;
+flex-wrap: wrap;
+margin-right: 1%;
+margin-left: 2%;
+}
+
+.complex_variants_2{
+display: flex;
+justify-content: center;
+width: 47%;
+flex-wrap: wrap;
+margin-right: 2%;
+margin-left: 1%;
+}
+
+.complex_selection_name{
+width: 100%;
+text-align: center;
+font-size: 15px;
+margin-bottom: 5px;
+}
+
+.complex_menu{
+width: 100%;
+min-height: 150px;
+background-color: #ffffff;
+border-radius: 3px;
+text-align: left;
+padding-left: 10px;
+font-size: 13px;
+}
+
+
 .profile_sign_in {
   margin: 20px;
   /* height: 100%; */
@@ -402,6 +461,7 @@ nav {
   border-radius: 5px;
   transition-duration: 0.3s;
   box-shadow: 3px 3px 3px 0px #d1d9e6 inset, -3px -3px 3px 0px #ffffff inset;
+  margin: 10px 0px;
 }
 
 #highload1:checked,
