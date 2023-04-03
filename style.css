@@ -280,6 +280,12 @@ main {
   background: white;
 }
 
+.all_korz{
+  width: 73%;
+  height: min-content;
+  background: white;
+}
+
 .name_of_dish {
   padding-left: 15px;
   padding-top: 25px;
@@ -303,8 +309,29 @@ main {
   border-radius: 10px;
 }
 
+.picture_food_b img{
+  border-radius: 10px;
+  padding-top: 90px;
+
+}
+
+.strelo{
+  
+position: absolute;
+left: 16.67%;
+right: 25%;
+top: 16.67%;
+bottom: 16.67%;
+}
+
 .text_of_food {
   font-size: 7px;
+  font-family: "Mulish", sans-serif;
+  text-align: center;
+}
+
+.text_of_food_korz{
+  font-size: 14px;
   font-family: "Mulish", sans-serif;
   text-align: center;
 }
@@ -456,6 +483,30 @@ main {
   color: #323f4b;
   display: flex;
   justify-content: space-between;
+}
+
+
+.button_korz{
+  margin: 0 30px;
+  margin-top: 130px;
+  background: #77ae50;
+  border: 0.5px solid #77ae50;
+  border-radius: 8px;
+  width: 250px;
+  height: 59px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  display: flex;
+  align-items:end;
+  text-align: center;
+  letter-spacing: 1.25px;
+  color: #f2f2f2;
+  justify-content:center;
+  align-items: center;
+  transition-duration: 0.1s;
+  
 }
 
 .menu_buttons_first_button {
