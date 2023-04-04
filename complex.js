@@ -31,7 +31,7 @@ function sendResult() {
   makeRequest(query, getCookie("userKey")).then((res) => {
     try {
       if (res.data) {
-        indow.location.replace("./complex.html");
+        window.location.replace("./complex.html");
       }
     } catch (e) {
     }
