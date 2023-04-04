@@ -7,7 +7,6 @@ app.listen(80, () => {
 
 // serve your css as static
 app.use(express.static(__dirname));
-console.log(__dirname)
 
 app.get("/", (req, res) => {
   res.sendFile(__dirname + "/sign_in.html");

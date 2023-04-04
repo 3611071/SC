@@ -34,7 +34,6 @@ function sendResult() {
         window.location.replace("./complex.html");
       }
     } catch (e) {
-      console.log("Неизвестная ошибка\n" + e);
     }
   });
 }

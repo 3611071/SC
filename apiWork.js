@@ -1,4 +1,4 @@
-const url = 'http://178.47.46.58/graphql';
+const url = 'https://smartcafe.215sozvezdie.ru/graphql';
 
 const makeRequest = (query, key) => {
   return fetch(url, {
@@ -6,7 +6,6 @@ const makeRequest = (query, key) => {
     headers: {
       'Content-Type': 'application/json',
       'Accept': 'application/json',
-
       'auth': 'Bearer ' + key,
     },
     body: query,
