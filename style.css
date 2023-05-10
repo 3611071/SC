@@ -222,6 +222,9 @@ height: 100vh !important;
     flex-direction: column;
   height: 100% !important;
 }
+.bnd{
+  margin-top: 10px;
+}
 
 .information_dish3 .nd3 input{
   height: 200px;
