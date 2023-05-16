@@ -230,9 +230,68 @@ header {
   margin-right: 20px;
   width: 20px;
 }
+.main228{
+height: 100vh !important;
+}
+.lcmld input{
+  width: 50px;
+}
+
+.lcmld2 input{
+  width: 50px;
+  margin-right: 200px;
+}
+
+.qwe{
+  width: 95%;
+  height:1px ;
+  background-color: #929494;
+  transform: translateY(20px);
+  margin-top: 6px;
+ 
+}
+
+.information_dish2{
+  background-color: #f8f3ef;
+  padding-bottom: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-left: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+
+.information_dish3{
+  background-color: #f8f3ef;
+  padding-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-left: 15px;
+  height: 140px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+.information_dish3 .nd3{
+  display: flex;
+  flex-direction: column !important;
+  align-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+  height: 100% !important;
+}
+.bnd{
+  margin-top: 10px;
+}
+
+.information_dish3 .nd3 input{
+  height: 200px;
+  width: 92%;
+}
+
 .head_complex_week{
   font-size: 17px;
-}
+
 main {
   padding: 0px;
   background-color: #fff;
@@ -385,6 +444,168 @@ main {
 
 }
 
+.complex_choice{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.in_complex_search{
+  background-color: #f8f3ef;
+  max-width: 199px;
+  min-height: 650px;
+  max-height: 800px;
+  overflow-y: scroll;
+}
+
+label {
+  display: block;
+  font: 1rem 'Fira Sans', sans-serif;
+}
+
+input,
+label {
+  margin-top: 25px;
+  margin-right: 40px;
+}
+
+.chosen_complex{
+  width: 221px;
+  height: min-content;
+  background: white;
+  float: right;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  column-gap: 10px;
+  justify-content: space-evenly;
+  padding-left: 0px;
+}
+
+.searching_variants{
+  width: 170px;
+  height: 80px;
+  margin-left: 10px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.photo_in_searching_variants{
+  background-color:rgb(187, 187, 187);
+  width: 60px;
+  height: 60px;
+  margin-top: 10px;
+  border-radius: 4px;
+}
+
+.text_in_searching_variants{
+  color: #1a1a1a;
+  font-size: 15px;
+  font-family: "Mulish", sans-serif;
+  padding-top: 30px;
+  padding-left: 7px;
+}
+
+.cost_in_searching_variants{
+  color: #1a1a1a;
+  font-size: 13px;
+  font-family: "Mulish", sans-serif;
+  padding-top: 30px;
+  padding-left: 7px;
+}
+
+.search_elements{
+  color: #323f4b;
+  font-size: 15px;
+  font-family: "Mulish", sans-serif;
+  padding-top: 5px;
+  padding-left: 15px;
+}
+
+.chosen_dishes{
+  width: 80px;
+  height: 135px;
+  margin-left: 10px;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.chosen_dishes_photo{
+  background-color:rgb(187, 187, 187);
+  height: 75px;
+  width: 75px;
+  margin-top: 10px;
+  border-radius: 4px;
+  margin-left: 3px;
+}
+
+.chosen_dishes_text{
+  color: #323f4b;
+  font-size: 13px;
+  font-family: "Mulish", sans-serif;
+  margin-top: 5px;
+}
+
+.chosen_dishes_cost{
+  color: #323f4b;
+  font-size: 11px;
+  font-family: "Mulish", sans-serif;
+  margin-top: 6px;
+}
+
+.choose_complex_days{
+  /* background-color: #1a1a1a; */
+  width: 400px;
+  height: 500px;
+  margin-left: 10px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 35px;
+  column-gap: 10px;
+  justify-content: space-evenly;
+  padding-left: 0px;
+}
+
+.day_in_menu{
+  background-color: #f8f3ef;
+  width: 190px;
+  min-height: 190px;
+  max-height: fit-content;
+  border-radius: 4px;
+  box-shadow: 0px 3px 3px rgba(104, 93, 93, 0.14);
+  align-items: center;
+  cursor: pointer
+}
+
+.day_in_menu_text{
+  color: #323f4b;
+  font-size: 16px;
+  font-family: "Mulish", sans-serif;
+  padding-top: 3px;
+}
+
+.day_in_menu_picture{
+  background-color: #fff;
+  width: 170px;
+  min-height: 155px;
+  max-height: fit-content;
+  border-radius: 4px;
+  margin-left: 10px;
+  margin-top: 3px;
+  align-items: center;
+}
+
+.complex_in_day_picture{
+  color: #323f4b;
+  font-size: 13px;
+  font-family: "Mulish", sans-serif;
+  padding-top: 8px;
+}
+
 .food {
   color: #323f4b;
   font-size: 15px;
@@ -428,6 +649,91 @@ main {
   padding-left: 0px;
 }
 
+.raw{
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  align-items: flex-start;
+  margin-left: 7px;
+  justify-content: space-between;
+}
+.raw *{
+  font-size: larger;
+}
+.raw select{
+  height: 40px;
+  margin-bottom: 15px;
+}
+.picture_dish{
+  display: flex;
+  flex-direction: row;
+  padding: 20px 20px;
+}
+
+.picture_food2 img{
+  border-radius: 10px;
+  width: 11vw;
+  height: 11vw;
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+.nd{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: baseline;
+  height: 28px ;
+}
+.information_dish{
+  /* display: flex;
+  flex-direction:row; */
+  background-color: #f8f3ef;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-left: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+.info_dish{
+  display: flex;
+  flex-direction:column;
+  padding-bottom: 20px;
+}
+
+.uiad{
+  margin-right: 110px;
+  display: flex;
+  flex-direction:column;
+}
+.nd2{
+  margin-right: 30px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  height: 35px ;
+}
+.nd3{
+  margin-right: 30px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  height: 35px ;
+}
+
+*{
+  font-family: "Mulish", sans-serif;
+}
+
 .picture_food img {
   border-radius: 10px;
 }
@@ -439,7 +745,7 @@ main {
 }
 
 .strelo{
-  
+height: 50px;
 position: absolute;
 left: 16.67%;
 right: 25%;
@@ -458,9 +764,6 @@ bottom: 16.67%;
   font-family: "Mulish", sans-serif;
   text-align: center;
 }
-
-
-
 
 .profile_sign_in {
   margin: 20px;
