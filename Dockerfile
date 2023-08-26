@@ -1,9 +1,9 @@
-FROM node:18-alpine
+FROM node:20-alpine3.17
 RUN apk add --no-cache tzdata
-ENV TZ Europe/Moscow
+ENV TZ Asia/Yekaterinburg
 ENV NODE_PATH /app/node_modules
 
 WORKDIR /app
 
-RUN npm install -g npm@9.5.0
+RUN npm install -g npm && yarn install
 CMD npm i && node start.js
